@@ -58,13 +58,12 @@ You can find my list of available commands with /help.
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a Hero For Fun and help admins manage their groups with One Punch! Have a look at the following for an idea of some of \
+I'm a bot and help admins manage @WWJollibee ! Have a look at the following for an idea of some of \
 the things I can help you with.
 
 *Main* commands available:
  • /help: PM's you this message.
  • /help <module name>: PM's you info about that module.
- • /donate: information on how to donate!
  • /settings:
    • in PM: will send you your settings for all supported modules.
    • in a group: will redirect you to pm, with all that chat's settings.
@@ -76,12 +75,9 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/302b7ea8370d627d1359b.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/d324d38ffd7e7517be573.jpg"
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
-Saitama is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
-You can donate to the original writer of the Base code, Paul
-There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+DONATE_STRING = """Coming soon!"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -188,22 +184,22 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="☑️ Add WWJollibeeRobot to your group",
-                            url="t.me/{}?startgroup=true".format(
+                            text="WW JOLLIBEE",
+                            url="t.me/wwjollibee".format(
                                 context.bot.username))
                     ],
                      [
                          InlineKeyboardButton(
-                             text="🚑 Support Group",
-                             url=f"https://t.me/{SUPPORT_CHAT}"),
+                             text="HELP DESK",
+                             url=f"https://t.me/wwjollibeehelpdeskrobot"),
                          InlineKeyboardButton(
-                             text="WW JOLLIBEE",
-                             url="https://t.me/WWJollibee")
+                             text="WW JOLLIBEE DUMPS",
+                             url="https://t.me/WWJollibeeDumps")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="🧾 WW Jollibee Dumps",
-                             url="https://t.me/WWJollibeeDumps")
+                             text="CREATOR",
+                             url="https://t.me/joniriz")
                      ],
                      [
                          InlineKeyboardButton(
